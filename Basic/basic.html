@@ -1,0 +1,205 @@
+
+<!--
+HTML =  HyperText Markup Language...এটা হলো একটি Markup Language, যেটা দিয়ে ওয়েবসাইট তৈরি করা হয়।
+কোনটা হবে শিরোনাম,
+কোনটা হবে লেখা,
+কোন জায়গায় ছবি থাকবে,
+কোন অংশে লিংক থাকবে,
+কনটেন্টের গঠন কেমন হবে.
+ HTML শুধু গঠন তৈরি করে — রঙ, ডিজাইন, এনিমেশন ইত্যাদি CSS/JS দিয়ে হয়।
+
+
+
+| Tag                    | Opening Tag    | Closing Tag     | উদাহরণ                                                
+| ---------------------- | -------------- | --------------- | ---------------------------------------------------- |
+| `<h1>` to `<h6>`       | `<h1>`         | `</h1>`         | `<h1>বড় থেকে ছোট শিরোনাম তৈরি করে</h1>`                  |
+| `<p>`                  | `<p>`          | `</p>`          | `<p>	একটি প্যারাগ্রাফ তৈরি করে </p>`                       |
+| `<a>`                  | `<a>`          | `</a>`          | `<a অন্য পেজে বা ওয়েবসাইটে লিংক দেয়</a>`                   |
+| `<img>`                |  Self-closing  |  নেই          | `<ছবি দেখায় />`                                        |
+| `<br>`                 |  Self-closing  |  নেই          | `লাইন ১<br />লাইন ২`                                  |
+| `<hr>`                 |  Self-closing  |  নেই          | `পূর্ব অংশ<hr />পরবর্তী অংশ`                              |
+| `<ul>`, `<ol>`, `<li>` | `<ul>` `<li>`  | `</ul>` `</li>` | `<ul><li>আইটেম ১</li><li>আইটেম ২</li></ul>`          |
+| `<div>`                | `<div>`        | `</div>`        | `<div>বড় ব্লক ভাগ করে</div>`                           |
+| `<span>`               | `<span>`       | `</span>`       | `<span>এটি ইনলাইন টেক্সট,ছোট অংশ আলাদা করে</span>`      |
+          
+ 
+1.<h1> TO <h6>......Headin TAG,
+<h1> সবচেয়ে বড়
+<h6> সবচেয়ে ছোট
+2.<p> — Paragraph Tag...
+কোন লেখাকে প্যারাগ্রাফ আকারে দেখাতে চাইলে এই ট্যাগ ব্যবহার করি।
+    
+3.Line Break <br>...
+Line Break নতুন লাইনে যাওয়ার জন্য ব্যবহার হয়।
+
+4.hr> — Horizontal Rule (একটা দাগ টানে)...
+
+5.<a> — লিংক (Anchor Tag)...
+এই ট্যাগ দিয়ে আমরা অন্য পেজ বা ওয়েবসাইটে লিংক দিতে পারি।
+
+6.<img> — ছবি দেখানো....
+ এই ট্যাগ দিয়ে পেজে ছবি দেখানো হয়।
+
+
+ 7.<video> — ভিডিও দেখানো....
+
+8.<audio> — অডিও চালানো.....
+
+
+9. Nested List — লিস্টের ভিতরে লিস্ট.....
+একটা লিস্টের ভিতরে আরেকটা লিস্ট.....
+
+10. Layout ট্যাগ (Structuring / Block Tags).....
+এই ট্যাগগুলো দিয়ে আমরা ওয়েবপেজকে ভাগ করি বিভিন্ন ব্লক ও সেকশন-এ।
+এতে কোড গুছিয়ে লেখা যায় এবং ডিজাইন করাও সহজ হয়।
+-->
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first webpage</title>
+  </head>
+  <body>
+<!-- Headline TAG  -->
+    <h1>Hello world!</h1>
+    <h2>Hello world!</h2>
+    <h3>Hello world!</h3>
+    <h4>Hello world!</h4>
+    <h5>Hello world!</h5>
+    <h6>Hello world!</h6>
+<!-- Paragraph TAG -->
+    <h1> Paragraph TAG</h1>
+    <p> <hr>My name is Minghao.<br><hr> and I read in Yunnan University.<br> <hr> My subject is Artificial Intaligence. <hr></p>
+<!-- Anchor TAG -->
+   <h1> Anchor TAG</h1>
+    <a href="http//www.google.com" target="_blank"> Clic here to Go to Google</a>
+
+    <!-- Image TAG -->
+     <h1>Image TAG</h1>
+    <img src="pic.jpg" alt="একটা ছবি" width="300px">
+
+<!-- Video TAG --> 
+    <h1>Video TAG</h1>
+    <video width="400px" controls>
+        <source> src="movie.mp4" type = "video/mp4"> Your browswer not supported in this video
+    </video>
+
+<!--Audio TAG -->
+    <h1>Audio TAG</h1>
+    <audio controls>
+    <source src="audio.mp4" type="audio/mp4"> Your browser did't support in this Audio</audio>
+
+<!-- HTML List Tags -->
+
+<h2> This is Unordered LIST</h2>
+ <ul>  <!--  <ul> — Unordered List -->
+    <li>Mango</li>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Licchi</li>
+ </ul>
+
+ <H2>This is Ordered LIST</H2>
+ <ol>  <!--  <Ol> — Ordered List -->
+    <li>Iphone</li>
+    <li>Samsunge</li>
+    <li>Vivo</li>
+    <li>Oppo</li>
+ </ol>
+
+<!-- Nested List  -->
+ <h2>This is Nested LIST</h2>
+ <ul>
+    <li>fruits:
+        <ul>
+            <li>Mango</li>
+            <li>Apple</li>
+            
+        </ul>
+    </li> <li>Vagitables</li>
+    <ul>
+        <li>Tomatoes</li>
+        <li>Potatoes</li>
+    </ul>
+ </ul>
+ 
+
+<!--Layout TAG....
+<div>, <span>,<header, <footer>, <section>  -->
+
+<!-- div...এটা হলো একটা ব্লক কন্টেইনার। এর ভেতরে অনেক ট্যাগ রাখা যায়। -->
+ <h2>Layout TAG</h2>
+ <div>
+    <p><hr>My name is Ahmad. <br> <hr>My ID 20243120033.<hr>
+    </p>
+ </div>
+<!-- <span> — Inline Block এটা ইনলাইনke... কিছু আলাদা করার জন্য। -->
+    <span style="color: red;">ID number is: 20243120033</span>
+
+
+<!-- <header>...ওয়েবপেজ বা সেকশনের শুরুর অংশ বোঝাতে ব্যবহৃত হয়। -->
+<header>
+    <h4>My website</h1>
+    <p>Wellcome!!</p>
+</header>
+
+
+<!-- <footer> ওয়েবপেজের শেষের অংশ (পাদটীকা) বোঝাতে ব্যবহৃত হয়।  -->
+<footer>
+
+    <p>Copyright 2025</p>
+</footer>
+
+
+<!-- <section>..পেজকে বিভিন্ন সেকশনে ভাগ করতে ব্যবহৃত হয়। -->
+
+<section>
+    <h3>Myself</h3>
+    <p>I learn HTML</p>
+</section>
+
+
+<!-- Form TAG......
+1.<form>
+2.<input>
+3.<textarea>
+4.<button>
+5.<select>, <option>
+-->
+
+<form action="/submit" method="post"></form>
+<label for="username"> name:</label>
+<input type="text" name=" username" placeholder="Write your name">
+
+<textarea name="message" rows="4" cols="10">Write ur openion</textarea>
+
+<select name="countrey">
+    <option value="bd">bangladesh</option>
+    <option value="in">india</option>
+</select>
+
+
+<button type="submit"> do submit</button>
+
+
+
+<h1>Contact form</h1>
+<form action="/submit" method="post">
+    <label for="name">name</label><br>
+    <input type="text" id="name" name="name" placeholder="write your name">
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
